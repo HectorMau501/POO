@@ -15,12 +15,11 @@ public class Main {
         
         Operacion operacion1 = new Operacion();
         
-        int div = operacion1.division(n1, n2);
-        int mul = operacion1.multiplicacion(n1, n2);
-        int ret = operacion1.restar(n1,n2);
-        int sum = operacion1.sumar(n1,n2);
+        System.out.println("El resultado de la divison es: "+operacion1.division(n1, n2));
+        System.out.println("El resultado de la multiplicacion es: "+operacion1.multiplicacion(n1, n2)); 
+        System.out.println("E; resultado de la resta es: "+operacion1.restar(n1,n2));
+        System.out.println("El resultado de la suma es: "+operacion1.sumar(n1,n2));
        
-        operacion1.mostrarResultados(sum, ret, mul, div);
     }
 }
 
