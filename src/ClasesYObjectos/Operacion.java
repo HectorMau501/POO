@@ -3,46 +3,38 @@ package ClasesYObjectos;
 import javax.swing.JOptionPane;
 
 
-public class Operacion {
+public class Operacion {    
     
-    private int numero1;
-    private int numero2;
-    private int suma;
-    private int resta;
-    private int division;
-    private int multiplicacion; 
-        
-    public void leernumeros ()
+    public int sumar(int numero1, int numero2)
     {
-        numero1 =  Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
-        numero2 =  Integer.parseInt(JOptionPane.showInputDialog("Digite el segundo numero"));
+        int suma = numero1 + numero2;
+        return suma;
     }
     
-    public void suma()
+        public int multiplicacion(int numero1, int  numero2)
     {
-        suma = numero1 + numero2;
-    }
-        public void multiplicacion()
-    {
-        multiplicacion = numero1 * numero2;
+        int mult = numero1 * numero2;
+        return mult; 
     }
     
-        public void resta()
+        public int restar(int numero1, int numero2)
         {
-            resta = numero1 - numero2;         
+           int resta = numero1 - numero2;  
+           return resta;
         }
         
-        public void division()
+        public int division(int numero1, int numero2)
         {
-            division = numero1 / numero2;         
+            int div = numero1 / numero2;   
+            return div; 
         }
         
-        public void mostrarResultados()
+        public void mostrarResultados(int suma, int resta, int mult, int div)
         {
             System.out.println("El resultado de la suma es: "+suma);
             System.out.println("El resultado de la resta es: "+resta);
-            System.out.println("El resultado de la multiplicacion es: "+multiplicacion);
-            System.out.println("El resultado de la division es: "+division);
+            System.out.println("El resultado de la multiplicacion es: "+mult);
+            System.out.println("El resultado de la division es: "+div);
         }
         
         
